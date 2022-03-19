@@ -1,0 +1,476 @@
+class ItemResep {
+  final String nama;
+  final String judulDetail;
+  final String gambar;
+  final String rate;
+  final String review;
+  final String durasi;
+  final String serving;
+  final String tingkatKesusahan;
+  final String chef;
+  final List<String> bahanBahan;
+  final List<String> caraMembuat;
+
+  ItemResep({
+    required this.nama,
+    required this.judulDetail,
+    required this.gambar,
+    required this.rate,
+    required this.review,
+    required this.durasi,
+    required this.serving,
+    required this.tingkatKesusahan,
+    required this.chef,
+    required this.bahanBahan,
+    required this.caraMembuat,
+});
+}
+
+var ListItemResepPopular = [
+  ItemResep(
+      nama: 'Empal Gentong',
+      judulDetail: 'Empal Gentong Spesial untuk keluarga',
+      gambar: 'image/empal_gentong.jpg',
+      rate: '4.5',
+      review: '300',
+      durasi: '90',
+      serving: '3',
+      tingkatKesusahan: 'Medium',
+      chef: 'Chef Dhiandra',
+      bahanBahan: [
+        '500 g daging sapi sandung lamur',
+        '500 g jeron sapi (babat, paru, usus)',
+        '2 sdm minyak sayur',
+        '1 batang serai, memarkan',
+        '1 lembar daun salam',
+        '3 butir cengkih',
+        '1 liter santan segar',
+        '7 butir bawang merah',
+        '5 siung bawang putih',
+        '1 sdt merica butiran',
+        '3 cm kunyit',
+        '1/2 cm jahe',
+        '2 sdt garam',
+      ],
+      caraMembuat: [
+        'Rebus daging sapi dan jeroan, masing-masing dengan panci terpisah dengan air secukupnya hingga empuk.',
+        'Tiriskan, potong-potong daging sapi dan jeron kecil dan tipis. Sisihkan kaldu daging 500 ml.',
+        'Tumis bumbu halus hingga wangi dan matang.',
+        'Tambahkan serai, daun salam, cengkih, aduk rata hingga wangi.',
+        'Angkat, taruh di panci, beri kaldu daging sapi dan santan, didihkan.',
+        'Masukkan potongan daging dan jeroan. Masak dengan api kecil hingga mendidih dan meresap lalu angkat.',
+        'Sajikan panas dengan Pelengkapnya.',
+      ],
+  ),
+  ItemResep(
+      nama: 'Mie Aceh',
+      judulDetail: 'Mie Goreng Aceh',
+      gambar: 'image/mie_aceh.jpg',
+      rate: '4',
+      review: '200',
+      durasi: '30',
+      serving: '15',
+      tingkatKesusahan: 'Hard',
+      chef: 'Chef Prasetya',
+      bahanBahan: [
+        '500 g mie lidi/hokkian',
+        '200 g udang kecil kupas',
+        '3 lembar daun kol. iris kadar',
+        '1 batang daun bawang, iris kasar',
+        '1 buah tomat, potong',
+        '3 sdm kecap manis',
+        '250 ml kaldu/air',
+        '1 sdm cuka masak',
+        '5 butir bawang merah',
+        '3 siung bawang putih',
+        '4 cm kunyit',
+        '3 buah cabe merah besar',
+        '2 buah kapulaga',
+        '1 sdt merica utuh',
+        '1/2 sdt jintan',
+        '1/4 sdt adas manis',
+        '2 sdt garam',
+      ],
+      caraMembuat: [
+        'Seduh mie lidi dengan air panas lalu tiriskan.',
+        'Tumis bumbu halus dengan 3 sdm minyak hingga matang dan harum lalu angkat.',
+        'Masukkan udang, aduk hingga berubah warna.',
+        'Tuangi air/kaldu, tambahkan kecap manis, cuka, dan didihkan.',
+        'Masukkan mie, kol, tomat dan daun bawang. Aduk hingga tercampur rata dan kuahnya habis.',
+        'Angkat, sajikan dengan Pelengkapnya.',
+      ],
+  ),
+  ItemResep(
+      nama: 'Lumpia Udang',
+      judulDetail: 'Lumpia Udang ala Restoran Dimsum yang Renyah Gurih',
+      gambar: 'image/lumpia_semarang.jpg',
+      rate: '4.4',
+      review: '150',
+      durasi: '45',
+      serving: '10',
+      tingkatKesusahan: 'Hard',
+      chef: 'Chef Abdul',
+      bahanBahan: [
+        '10 buah kulit lumpia ukuran 10x10 cm',
+        '10 ekor udang windu ukuran sedang',
+        'minyak goreng',
+        '100 g udang cincang',
+        '100 g ayam cincang',
+        '20 g wortel cincang halus',
+        '1 batang daun bawang, iris halus',
+        '2 siung bawang, cincang halus',
+        '1 sdm tepung terigu',
+        '1 sdm kecap asin',
+        '1 kuning telur ayam',
+        '1/2 sdt merica bubuk',
+        '1/2 sdt garam',
+      ],
+      caraMembuat: [
+        'Kupas udang, sisakan ekornya. Kerat bagian bawah udang hingga udah agak lurus. Sisihkan.',
+        'Adonan Isi : Aduk udang dan ayam cincang hingga rata.',
+        'Tambahkan wortel, daun bawang, bawang putih, tepung terigu, telur, kecap asin, merica dan garam. Aduk hingga benar-benar tercampur rata.',
+        'Ambil selembar kulit lumpia, beri 1 sdm adonan isi, lalu taruh udang di tenganhnya dan gulung kulit lumpia hingga rapi dan padat.',
+        'Rekatkan sisi dan ujung kulit lumpia dengan larutan terigu atau air sambil tekan hingga rapat.',
+        'Goreng dalam minyak panas dan banyak dengan api sedang hingga kuning kecokelatan dan kering.',
+        'Angkat dan tiriskan.',
+        'Sajikan hangat dengan Pelengkapnya.',
+      ],
+  ),
+  ItemResep(
+      nama: 'Es Pisang Ijo',
+      judulDetail: 'Es Pisang Ijo Khas Makassar yang Legit Lembut',
+      gambar: 'image/es_pisang_ijo.jpg',
+      rate: '5',
+      review: '500',
+      durasi: '60',
+      serving: '6',
+      tingkatKesusahan: 'Medium',
+      chef: 'Chef Zaidan',
+      bahanBahan: [
+        '200 g tepung beras',
+        '1 sdm tepung kanji',
+        '50 g gula pasir',
+        '2 sdm air daun suji pandan',
+        '400 ml santan encer',
+        '6 buah pisang kepok/tanduk/raja sereh, kupas',
+        'daun pisang/plastik tebal',
+        '100 g tepung beras',
+        '750 ml santan segar yang sedang kentalnya',
+        '1 lembar daun pandan',
+        '1/2 sdt garam',
+      ],
+      caraMembuat: [
+        'Pisang Ijo: Taruh dalam wadah, tepung beras, tepung kanji, gula, air daun suji dan santan. Aduk hingga larut dan licin.',
+        'Masak di atas api kecil sambil aduk-aduk hingga kental dan matang.',
+        'Angkat dan dinginkan.',
+        'Ambil 2-3 sdm adonan, ratakan di atas selembar daun pisang atau plastik tebal.',
+        'Beri sepotong pisang di tengahnya. Balut seluruh pisang hingga bentuknya mirip pisang.',
+        'Taruh di atas kukusan yang sudah dialasi daun, Kukus selama 30 menit hingga matang.',
+        'Angkat dan dinginkan.',
+        'Bubur: Taruh tepung beras, santan, akstrak pandan dan garam dalam panci, aduk hingga larut.',
+        'Masak di atas api sedang, aduk-aduk hingga kental dan matang.',
+        'Angkat dan dinginkan.',
+        'Penyajian : Potong-potong pisang ijo melintang, taruh di mangkuk saji.',
+        'Beri bubur, santan, sirop merah dan es batu. Sajikan dingin.',
+      ],
+  ),
+];
+
+var ListItemResepLocal = [
+  ItemResep(
+      nama: 'Ayam Goreng',
+      judulDetail: 'Ayam Goreng Jawa Yang Gurih',
+      gambar: 'image/ayam_goreng.png',
+      rate: '4.4',
+      review: '200',
+      durasi: '45',
+      serving: '8',
+      tingkatKesusahan: 'Easy',
+      chef: 'Chef Muflih',
+      bahanBahan: [
+        '1 ekor ayam kampung',
+        '2 lembar daun salam',
+        '3 lembar daun jeruk',
+        '1 batang serai, memarkan',
+        '2 cm lengkuas, memarkan',
+        '1.5 liter air kelapa',
+        '20 g gula merah',
+        '5 butir bawang merah',
+        '3 siung bawang putih',
+        '2 butir kemiri',
+        '1/2 sdt ketumbar',
+        '1/2 sdt merica butiran',
+        '1 sdt terasi goreng',
+        '2 sdt garam',
+      ],
+      caraMembuat: [
+        'Potong ayam kampung menjadi 4 atau 8 bagian sesusi selera. Cuci bersih lalu tiriskan.',
+        'Taruh ayam dalam panci. Beri daun salam, daun jeruk, serai dan lengkuas.',
+        'Tuangi air kelapa, gula merah dan Bumbu Halus.',
+        'Masak dengan api kecil hingga air perebusnya susut dan ayam empuk.',
+        'Angkat ayam dan tiriskan hingga dingin.',
+        'Siapkan minyak banyak dalam wajan di atas api sedang.',
+        'Goreng ayam hingga kuning keemasan dan kering.',
+        'Angkat dan tiriskan.',
+        'Sajikan hangat dengan sambal dan lalapan.',
+      ],
+  ),
+  ItemResep(
+    nama: 'Bebek Goreng',
+    judulDetail: 'Bebek Goreng Sambal Ijo',
+    gambar: 'image/bebek_goreng.png',
+    rate: '5',
+    review: '350',
+    durasi: '90',
+    serving: '4',
+    tingkatKesusahan: 'Medium',
+    chef: 'Chef Ariq',
+    bahanBahan: [
+      '1 ekor (1.3 kg) bebek',
+      '2 buah jeruk nipis',
+      'minyak goreng',
+      '2 batang serai',
+      '2 lembar daun salam',
+      '3 lembar daun jeruk',
+      '4 cm lengkuas muda, parut',
+      '1.5 liter air',
+      '7 siung bawang putih',
+      '4 butir bawang merah',
+      '3 butir kemiri',
+      '1 cm jahe',
+      '3 cm kunyit',
+      '1/2 sdt merica butiran',
+      '1 sdt gula pasir',
+      '2 sdt garam',
+      '5 buah cabe hijau besar',
+      '50 g cabe hijau keriting',
+      '50 g cabe rawit hijau',
+      '7 butir bawang merah',
+      '3 siung bawang putih',
+      '100 ml minyak kelapa/sayur',
+      '5 buah tomat hijau, cincang',
+      '2 lembar daun jeruk purut',
+      '1 sdt gula pasir',
+      '2 sdt garam',
+    ],
+    caraMembuat: [
+      'Potong bebek menjadi 4 bagian. Cuci bersih dan cabuti bulu-bulu halusnya.'
+          'Lumuri bebek dengan air jeruk nipis dan diamkan beberapa saat.'
+          'Tumis Bumbu Halus hingga harum dan matang.'
+          'Tambahkan daun salam, daun jeruk, serai dan lengkuas, aduk hingga layu.'
+          'Masukkan potongan bebek, aduk hingga kaku dan warnanya putih.'
+          'Tuangi air dan mask hingga mendidih.'
+          'Tutup wajan, masak dengan api kecil hingga bebek empuk dan kuahnya habis.'
+          'Angkat bebek dan tiriskan.'
+          'Goreng bebek hingga kering berikut sisa bumbunya.'
+          'Angkat dan tiriskan. Sajikan dengan Sambal Cabe Ijo.'
+          'Sambal Cabe Ijo: Tumbuk cabe hijau besar, cabe hijau keriting dan sebagian cabe rawit hijau, bawang merah dan bawang putih hingga agak halus.'
+          'Panaskan minyak kelapa dalam wajan, tumis bumbu yang sudah ditumbuk hingga mendidih.'
+          'Kecilkan api, tambahkan daun jeruk, garam, gula dan kaldu jamur.'
+          'Masukkan irisan tomat hijau dan sisa cabe rawit hijau.'
+          'Masak hingga seluruhnya layu lalu angkat.'
+    ],
+  ),
+  ItemResep(
+    nama: 'Dendeng Sapi',
+    judulDetail: 'Dendeng Sapi Medan Yang Pedesnya Nendang',
+    gambar: 'image/dendeng_sapi.png',
+    rate: '4.5',
+    review: '320',
+    durasi: '75',
+    serving: '6',
+    tingkatKesusahan: 'Hard',
+    chef: 'Chef Hidayat',
+    bahanBahan: [
+      '500 g daging has sapi'
+          '2 batang serai'
+          '2 lembar daun salam'
+          '2 lembar daun jeruk purut'
+          '1 buah tomat merah'
+          '1 sdt asam Jawa'
+          '15 buah cabe merah'
+          '5 butir bawang merah'
+          '3 siung bawang putih'
+          '1 sdt gula pasir'
+          '2 sdt garam'
+    ],
+    caraMembuat: [
+      'Iris daging melintang serat 3/4 cm. Rebus daging dalam air secukupnya hingga lunak.',
+      'Angkat daging dan tiriskan.',
+      'Goreng irisan daging dalam minyak hingga kering kecokelatan lalu angkat.',
+      'Tumis Bumbu Halus hingga wangi dan matang. tambahkan serai, daun salam, daun jeruk lalu aduk hingga layu.',
+      'Masukkan tomat dan asam Jawa, beri sedikit air dan didihkan.',
+      'Masukkan daging goreng, aduk hingga bumbu cabe terserap oleh daging dan agak kering.',
+      'Angkat dan sajikan hangat.',
+    ],
+  ),
+  ItemResep(
+    nama: 'Sop Ayam',
+    judulDetail: 'Sop Ayam Bumbu Jahe',
+    gambar: 'image/sopayam.png',
+    rate: '4.8',
+    review: '420',
+    durasi: '75',
+    serving: '6',
+    tingkatKesusahan: 'Medium',
+    chef: 'Chef Ari',
+    bahanBahan: [
+      '500 g daging has sapi',
+      '2 batang serai',
+      '2 lembar daun salam',
+      '2 lembar daun jeruk purut',
+      '1 buah tomat merah',
+      '1 sdt asam Jawa',
+      '15 buah cabe merah',
+      '5 butir bawang merah',
+      '3 siung bawang putih',
+      '1 sdt gula pasir',
+      '2 sdt garam',
+    ],
+    caraMembuat: [
+      'Iris daging melintang serat 3/4 cm. Rebus daging dalam air secukupnya hingga lunak.'
+          'Angkat daging dan tiriskan.'
+          'Goreng irisan daging dalam minyak hingga kering kecokelatan lalu angkat.'
+          'Tumis Bumbu Halus hingga wangi dan matang. tambahkan serai, daun salam, daun jeruk lalu aduk hingga layu.'
+          'Masukkan tomat dan asam Jawa, beri sedikit air dan didihkan.'
+          'Masukkan daging goreng, aduk hingga bumbu cabe terserap oleh daging dan agak kering.'
+          'Angkat dan sajikan hangat.'
+    ],
+  ),
+];
+
+var ListItemResepMinuman = [
+  ItemResep(
+    nama: 'Es Podeng',
+    judulDetail: 'Es Podeng Manten',
+    gambar: 'image/Es Podeng.png',
+    rate: '4.9',
+    review: '425',
+    durasi: '10',
+    serving: '10',
+    tingkatKesusahan: 'Easy',
+    chef: 'Chef Udin',
+    bahanBahan: [
+      '250 gr gula pasir/sesuai selera manisnya',
+      '1 buah nanas, cuci bersih potong2',
+      '3-4 batang kayu manis',
+      'Secukupnya air matang',
+      'Secukupnya gula',
+      '1 bungkus agar2 warna hijau',
+      '1 bungkus agar2 tanpa warna/plain',
+      'Secukupnya susu kental manis',
+      'Secukupnya biji selasih kering, rendam dgn air hangat',
+      'Secukupnya gula pasir',
+      '250 gr kolang kaling',
+      'Secukupnya daun pandan',
+      'Secukupnya air',
+      'Secukupnya pewarna makanan warna merah',
+      'Secukupnya sirup merah (sya pake marjan rasa rose/cocopandan juga bisa)',
+      '1 buah leci kalengan',
+    ],
+    caraMembuat: [
+      'Setup Nanas : masak nanas bersama air dan gula pasir serta kayu manis hingga nanas layu. Jangan sampai airnya habis ya.',
+      'Agar-agar : masak 1 bungkus agar2 warna hijau dgn 2,5 gelas air dan gula. Dinginkan. Setelah dingin serut memanjang. Sisihkan.',
+      'Agar-agar : masak agar2 plain dgn 4 gelas air dan gula secukupnya, tambahkan susu kental manis putih. Tuang dalam cetakan, taburkan agar warna hijau yg sudah diserut tadi, ditambah dhn biji selasih. Dinginkan. Lalu potong2 sesuai selera.',
+      'Kolang-kaling : cuci bersih kolang kaling, potong sesuai selera. Masak bersama air, gula pasir dan daun pandan. Tambahkan pewarna makanan warna merah/sesuai selera. Masak sampai matang. Sisihkan.',
+      'Penyajian : siapkan mangkok, masukkan 1 potong agar2, setup nanas(bersama dgn airnya sedikit), kolang-kaling, leci dan sedikit air dr leci. Lalu tambahkan sirup dan es batu.',
+    ],
+  ),
+  ItemResep(
+    nama: 'Es Cendol Dawet',
+    judulDetail: 'Es Cendol Dawet Dalgona',
+    gambar: 'image/Es Cendol Dalgona.png',
+    rate: '5',
+    review: '450',
+    durasi: '10',
+    serving: '10',
+    tingkatKesusahan: 'Easy',
+    chef: 'Chef Abil',
+    bahanBahan: [
+      '200 gr cendol siap pakai',
+      'Secukupnya es batu',
+      'Sirup gula merah',
+      '300 gr gula merah',
+      '200 ml air',
+      '1 lembar daun pandan, simpulkan',
+      '300 ml santan',
+      '1/4 sdt garam',
+      '1 lembar daun pandan, simpulkan',
+      '2 sdm bubuk kopi instan',
+      '2 sdm gula pasir',
+      '2 sdm air es',
+    ],
+    caraMembuat: [
+      'Sirup gula merah: masukkan semua bahan dalam panci. Masak dengan api sedang hingga mendidih. Sisihkan.',
+      'Kuah santan: masukkan semua bahan dalam panci. Aduk rata. Masak dengan api sedang sambil diaduk hingga mendidih. Sisihkan.',
+      'Dalgona coffee: masukkan semua dalam bowl, kocok menggunakan mixer hingga menjadi busa. Sisihkan.',
+      'Penyajian: siapkan gelas saji, tuangi sirup gula merah. Masukkan cendol dan es batu. Tuangi kuah santan dan terakhir beri dalgona coffee diatasnya.',
+    ],
+  ),
+  ItemResep(
+    nama: 'Wedang Ronde',
+    judulDetail: 'Wedang Ronde Anget',
+    gambar: 'image/Wedang Ronde.png',
+    rate: '4.7',
+    review: '400',
+    durasi: '15',
+    serving: '8',
+    tingkatKesusahan: 'Easy',
+    chef: 'Chef AlRashid',
+    bahanBahan: [
+      '125 g Tepung ketan',
+      '1 sdm Tepung beras',
+      '140 Air ml',
+      'Secukupnya pewarna makanan',
+      '50 g kacang tanah sangrai',
+      '40 g gula jawa',
+      '1 sdm air',
+      '400 ml air',
+      '2 lembar daun pandan',
+      '80 g jahe',
+      '5 sdm Gula pasir',
+      '50 g Gula jawa',
+      'Secukupnya kacang tanah, sangrai, kupas',
+    ],
+    caraMembuat: [
+      'Buat isiannya: sangrai kacang tanah, kupas kulitnya lalu haluskan, campur dengan gula dan air aduk rata. Sisihkan',
+      'Buat adonan kulitnya, campur tepung ketan tepung beras tuangi air sedikit demi sedikit sampai adonan bisa dibentuk, (air disesuaikan ya karena tiap tepung memilik kelembapan yg berbeda)',
+      'Bagi adonan menjadi 4, beri warna merah, ungu hijau dan satu biarkan putih.',
+      'Ambil secukupnya adonan beri isian lalu bulat2kan',
+      'Didihkan air, masukkan kedalam air, jika sudah mengapung langsung angkat.',
+      'Wedang Ronde! langkah memasak 4 foto',
+      'Buat kuahnya, siapkan panci beri air masukkan jahe daun pandan gula jawa gula pasir didihkan, lalu angkat dan saring',
+      'Tata ronde dimangkok siram dengan kuah lalu beri kacang tanah.',
+    ],
+  ),
+  ItemResep(
+    nama: 'Wedang Uwuh',
+    judulDetail: 'Wedang Uwuh Anget',
+    gambar: 'image/Wedang Uwuh.png',
+    rate: '4.2',
+    review: '300',
+    durasi: '15',
+    serving: '8',
+    tingkatKesusahan: 'Medium',
+    chef: 'Chef Harun',
+    bahanBahan: [
+      '1 lt air',
+      '1 ruas jahe geprek',
+      'Segenggam kayu secang',
+      '3 bh kapulaga',
+      '3 cm kayu manis',
+      '9 bh cengkeh',
+      '2 batang sereh geprek',
+      '2 lembar daun jeruk',
+      'Secukupnya gula batu',
+    ],
+    caraMembuat: [
+      'Rebus semua bahan.aduk hingga rata',
+      'Tunggu mendidih',
+      'Tes rasa',
+      'Matikan kompor',
+      'Saring',
+      'Maree seruputt',
+    ],
+  ),
+];
