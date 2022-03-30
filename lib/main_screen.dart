@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mamakusuka/DetailScreen.dart';
 import 'package:mamakusuka/model/resep_item.dart';
